@@ -1,0 +1,11 @@
+service: polling-place
+app: polling-place
+tenant: jakepartusch
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  retrievePollingPlace:
+    handler: handler.retrievePollingPlace
